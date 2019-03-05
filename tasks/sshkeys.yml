@@ -6,6 +6,8 @@
     state: 'present'
     user: '{{ item.name }}'
     exclusive: '{{ item.sshkeys_exclusive | d(omit) }}'
+    path: '{{ item.sshkeys_path | d(omit) }}'
+    manage_dir: '{{ item.sshkeys_manage_dir | d(omit) }}'
   with_flattened:
     - '{{ users__root_accounts }}'
     - '{{ users__default_accounts }}'
