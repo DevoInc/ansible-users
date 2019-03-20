@@ -2,9 +2,9 @@
 
 dependencies:
 
-  - role: debops.secret
+  - role: devoinc.secret
 
-  - role: debops.ansible_plugins
+  - role: devoinc.ansible_plugins
 
 galaxy_info:
 
